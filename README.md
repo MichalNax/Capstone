@@ -12,7 +12,7 @@ Inspect the example VPC, subnets, security groups, and the AMI.
 
 _Step 1: Create a Cloud9 IDE_
 
-**Note: it is not necessary to make a Cloud9 instance with an Amazon Linux 2 EC2 instance as we are provided a launch template (ExampleLT) with all the necessary resources files on it (the SQL file and Example.zip), so we can skip steps 1-3 HOWEVER it would be a good idea to gain a more comprehensive understanding 
+**Note: it is not necessary to make a Cloud9 instance with an Amazon Linux 2 EC2 instance as we are provided a launch template (ExampleLT) with all the necessary resources files on it (the SQL file and Example.zip), so we can skip steps 1-3 HOWEVER it would be a good idea to gain a more comprehensive understanding of this project and how we would build a LAMP stack**
 
 _Step 2: Get the Project Assets_
 

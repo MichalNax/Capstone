@@ -62,6 +62,18 @@ Verify data import: Run ```use exampledb;, show tables;```, and ```select * from
 _Step 7: Configure the System Parameters in Parameter Store Systems Manager_
 
 Add the required parameters to the Parameter Store and set the correct values.
+  
+To create a new parameter, click on the "Create parameter" button.
+
+Add the following parameters one by one, setting their corresponding values:
+
+- /example/endpoint: The endpoint of your RDS database instance, found in the RDS console.
+- /example/username: The username for your RDS database instance (e.g., admin).
+- /example/password: The password for your RDS database instance.
+- /example/database: The name of your RDS database (e.g., exampledb).
+Make sure to select the appropriate "Type" for each parameter (e.g., "String" or "SecureString" for sensitive information like passwords).
+
+Click on "Create parameter" to save each parameter.
 
 **Conclusion:**
 

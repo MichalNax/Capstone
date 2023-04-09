@@ -16,8 +16,12 @@ _Step 1: Create a Cloud9 IDE_
 
 _Step 2: Get the Project Assets_
 
-Clone the repository or download the Example.zip file.
+Download the Example.zip file to Cloud9.
 Extract the files to the Apache www folder.
+
+```wget https://aws-tc-largeobjects.s3-us-west-2.amazonaws.com/ILT-TF-200-ACACAD-20-EN/capstone-project/Example.zip```
+
+```sudo unzip Example.zip -d /var/www/html/```
 
 _Step 3: Install a LAMP Web Server on Amazon Linux 2_
 

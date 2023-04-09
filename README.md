@@ -47,17 +47,17 @@ _Step 6: Import the Data into the RDS Database_
 
 Import data: Use Cloud9 or connect to the web instance via the bastion host.
 
-Get SQL dump file: Download the file from the project assets and place it in your working directory.
+Get SQL dump file: Download the file from the project assets and place it in your working directory. (if you havent already)
 
-Connect to RDS database: Use the command mysql -u admin -p --host <rds-endpoint> and replace <rds-endpoint> with the actual RDS endpoint.
+Connect to RDS database: Use the command ```mysql -u admin -p --host <rds-endpoint>``` and replace <rds-endpoint> with the actual RDS endpoint.
 
-Access RDS database: Run use exampledb; and show tables; to ensure access.
+Access RDS database: Run ```use exampledb;``` and ```show tables;``` to ensure access.
 
-Import data to RDS: Run mysql -u admin -p exampledb --host <rds-endpoint> < Countrydatadump.sql.
+Import data to RDS: Run ```mysql -u admin -p exampledb --host <rds-endpoint> < Countrydatadump.sql```.
 
 Test Application Load Balancer: Navigate to the Load Balancer's DNS address in your web browser.
 
-Verify data import: Run use exampledb;, show tables;, and select * from countrydata_final; to confirm the data was imported successfully.
+Verify data import: Run ```use exampledb;, show tables;```, and ```select * from countrydata_final;``` to confirm the data was imported successfully.
 
 _Step 7: Configure the System Parameters in Parameter Store Systems Manager_
 
@@ -65,6 +65,6 @@ Add the required parameters to the Parameter Store and set the correct values.
 
 **Conclusion:**
 
-Following these steps, you can successfully complete the AWS Cloud Architecting Capstone project, implementing a secure and highly available solution for hosting a website and MySQL database. This comprehensive guide will help beginners gain hands-on experience with AWS services such as EC2 instances, Load Balancers, Amazon RDS, and MySQL databases, while consolidating their skills and knowledge in a practical scenario.
+Following these steps, you can successfully complete the AWS Cloud Architecting Capstone project, implementing a secure and highly available solution for hosting a website and MySQL database. This  guide will help beginners gain hands-on experience with AWS services such as EC2 instances, Load Balancers, Amazon RDS, and MySQL databases, while consolidating their skills and knowledge in a practical scenario.
 
 Happy cloud journey, and thank you for reading!

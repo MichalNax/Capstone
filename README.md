@@ -4,7 +4,7 @@ Capstone Project
 
 **Introduction:**
 
-In this blog post, we'll walk through the process of completing the AWS Cloud Architecting Capstone project in a non-technical-friendly manner. This comprehensive guide will combine elements from previous inputs and provide step-by-step instructions to create a secure and highly available solution.
+In this blog post, we'll walk through the process of completing the AWS Cloud Architecting Capstone project in a non-technical-friendly manner. This guide will provide step-by-step instructions to create a secure and highly available solution.
 
 _Step 0: Inspect the Architecture_
 

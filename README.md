@@ -25,6 +25,8 @@ Extract the files to the Apache www folder.
 
 _Step 3: Install a LAMP Web Server on Amazon Linux 2_
 
+**Follow the steps from https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html and copy in the code into the IDE to launch the LAMP stack**
+
 Update packages and install the LAMP stack.
 Install and start the Apache HTTP server.
 Open port 80 from the security group of the Cloud9 EC2 instance.

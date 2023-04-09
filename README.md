@@ -45,13 +45,19 @@ Launch web instances in the private subnet.
 
 _Step 6: Import the Data into the RDS Database_
 
-Import the data into the RDS database instance from Cloud9 or by accessing the web instance via the bastion host.
-Get the SQL dump file.
-Connect to the RDS database.
-Test that you can access the RDS database.
-Import the data into the RDS database.
-Test the Application Load Balancer.
-Test that the data was imported.
+Import data: Use Cloud9 or connect to the web instance via the bastion host.
+
+Get SQL dump file: Download the file from the project assets and place it in your working directory.
+
+Connect to RDS database: Use the command mysql -u admin -p --host <rds-endpoint> and replace <rds-endpoint> with the actual RDS endpoint.
+
+Access RDS database: Run use exampledb; and show tables; to ensure access.
+
+Import data to RDS: Run mysql -u admin -p exampledb --host <rds-endpoint> < Countrydatadump.sql.
+
+Test Application Load Balancer: Navigate to the Load Balancer's DNS address in your web browser.
+
+Verify data import: Run use exampledb;, show tables;, and select * from countrydata_final; to confirm the data was imported successfully.
 
 _Step 7: Configure the System Parameters in Parameter Store Systems Manager_
 

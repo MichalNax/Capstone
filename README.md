@@ -4,7 +4,7 @@ Capstone Project
 
 **Introduction:**
 
-In this blog post, we'll walk through the process of completing the AWS Cloud Architecting Capstone project in a non-technical-friendly manner. This guide will provide step-by-step instructions to create a secure and highly available solution.
+In this project, we'll walk through the process of completing the AWS Cloud Architecting Capstone project in a mostly non-technical manner. This guide will provide step-by-step instructions to create a secure and highly available solution.
 
 _Step 0: Inspect the Architecture_
 
@@ -79,4 +79,4 @@ Click on "Create parameter" to save each parameter.
 
 Following these steps, you can successfully complete the AWS Cloud Architecting Capstone project, implementing a secure and highly available solution for hosting a website and MySQL database. This  guide will help beginners gain hands-on experience with AWS services such as EC2 instances, Load Balancers, Amazon RDS, and MySQL databases, while consolidating their skills and knowledge in a practical scenario.
 
-Happy cloud journey, and thank you for reading!
+Happy cloud journey, and good luck!

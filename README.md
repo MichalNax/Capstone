@@ -34,14 +34,29 @@ Get the Cloud9 EC2 public instance IP address and test that you can access the w
 
 _Step 4: Create a MySQL RDS Database Instance_
 
-Create a db subnet group with the provided specifications.
-Create a MySQL RDS database instance with the provided specifications.
+- Create a db subnet group
+- Databasetype: MySQL
+- Template: Dev/Test
+- DBinstanceidentifier: Example
+- DB instance size: db.t3.micro
+- Storage type: General Purpose (SSD)
+- Allocatedstorage: 20GiB
+- Storageautoscaling: Enabled
+- Standbyinstance: Enabled
+- Virtualprivatecloud: ExampleVPC
+- Databaseauthenticationmethod: Passwordauthentication
+- Initialdatabasename: exampledb
+- Enhancedmonitoring: Disabled.
 
 _Step 5: Create an Application Load Balancer_
 
-Create a target group.
-Create an auto-scaling group.
-Launch web instances in the private subnet.
+Configure ALB settings: Provide a name, choose the scheme (Internet-facing), IP address type (ipv4), and set up a listener (HTTP/80). Select the VPC and at least two Availability Zones.
+
+Configure security groups: Create or select a security group that allows inbound traffic on the listener's port.
+
+Configure routing: Create a new target group or select an existing one, set the target type to "Instance", provide a name, and configure health checks.
+
+Register targets: Select the EC2 instances to route traffic to and add them to the target group.
 
 _Step 6: Import the Data into the RDS Database_
 

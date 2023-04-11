@@ -2,19 +2,21 @@
 Capstone Project
 
 
-**Introduction:**
+## **Introduction:**
 
 In this project, we'll walk through the process of completing the AWS Cloud Architecting Capstone project in a mostly non-technical manner. This guide will provide step-by-step instructions to create a secure and highly available solution.
 
-_Step 0: Inspect the Architecture_
+# _Step 0: Inspect the Architecture_
 
 Inspect the example VPC, subnets, security groups, and the AMI.
 
-_Step 1: Create a Cloud9 IDE_
+
+
+# _Step 1: Create a Cloud9 IDE_
 
 **Note: it is not necessary to make a Cloud9 instance with an Amazon Linux 2 EC2 instance as we are provided a launch template (ExampleLT) with all the necessary resources files on it (the SQL file and Example.zip), so we can skip steps 1-3 HOWEVER it would be a good idea to gain a more comprehensive understanding of this project and how we would build a LAMP stack**
 
-_Step 2: Get the Project Assets_
+# _Step 2: Get the Project Assets_
 
 Download the Example.zip file to Cloud9.
 Extract the files to the Apache www folder.
@@ -23,7 +25,7 @@ Extract the files to the Apache www folder.
 
 ```sudo unzip Example.zip -d /var/www/html/```
 
-_Step 3: Install a LAMP Web Server on Amazon Linux 2_
+# _Step 3: Install a LAMP Web Server on Amazon Linux 2_
 
 **Follow the steps from https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html and copy in the code into the IDE to launch the LAMP stack**
 
@@ -32,7 +34,7 @@ Install and start the Apache HTTP server.
 Open port 80 from the security group of the Cloud9 EC2 instance.
 Get the Cloud9 EC2 public instance IP address and test that you can access the website.
 
-_Step 4: Create a MySQL RDS Database Instance_
+# _Step 4: Create a MySQL RDS Database Instance_
 
 - Create a db subnet group
 - Databasetype: MySQL
@@ -48,7 +50,7 @@ _Step 4: Create a MySQL RDS Database Instance_
 - Initialdatabasename: exampledb
 - Enhancedmonitoring: Disabled.
 
-_Step 5: Create an Application Load Balancer_
+# _Step 5: Create an Application Load Balancer_
 
 Configure ALB settings: Provide a name, choose the scheme (Internet-facing), IP address type (ipv4), and set up a listener (HTTP/80). Select the VPC and at least two Availability Zones.
 
@@ -58,7 +60,7 @@ Configure routing: Create a new target group or select an existing one, set the 
 
 Register targets: Select the EC2 instances to route traffic to and add them to the target group.
 
-_Step 6: Import the Data into the RDS Database_
+# _Step 6: Import the Data into the RDS Database_
 
 Import data: Use Cloud9 or connect to the web instance via the bastion host.
 
@@ -74,7 +76,7 @@ Test Application Load Balancer: Navigate to the Load Balancer's DNS address in y
 
 Verify data import: Run ```use exampledb;, show tables;```, and ```select * from countrydata_final;``` to confirm the data was imported successfully.
 
-_Step 7: Configure the System Parameters in Parameter Store Systems Manager_
+# _Step 7: Configure the System Parameters in Parameter Store Systems Manager_
 
 Add the required parameters to the Parameter Store and set the correct values.
   
@@ -90,7 +92,7 @@ Make sure to select the appropriate "Type" for each parameter (e.g., "String" or
 
 Click on "Create parameter" to save each parameter.
 
-**Conclusion:**
+## **Conclusion:**
 
 Following these steps, you can successfully complete the AWS Cloud Architecting Capstone project, implementing a secure and highly available solution for hosting a website and MySQL database. This  guide will help beginners gain hands-on experience with AWS services such as EC2 instances, Load Balancers, Amazon RDS, and MySQL databases, while consolidating their skills and knowledge in a practical scenario.
 
